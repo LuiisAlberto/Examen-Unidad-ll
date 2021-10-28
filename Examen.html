@@ -1,0 +1,110 @@
+<script>
+
+    // Realizar un programa que permita agregar n productos, nombre, precio, inventario (cantidad.)
+    //Agregar productos al carrito 
+    //Mostrar informacion del carrito(productos, cantidad, total)
+    //Preguntar si desea realizar otra venta
+    
+    var productos = parseInt(prompt("¿Cuantos productos desea comprar?"));
+    var nombre = prompt("Ingrese el nombre del producto");
+    var precio = parseInt(prompt("¿Cuanto cuesta el producto?"));
+    var inventario = parseInt(prompt("¿Cuantos productos hay en inventario?"));
+    
+    function cantidadProductos(productos, nombre, precio, inventario){
+        let producto={
+            "cantidad": productos,
+            "nombres": nombre,
+            "precios": precio,
+            "inventarios": inventario
+        }
+        let hay = false;
+            for(let i=0; i<productos; i++){
+                if(producto[i] == productos){
+                    hay = true;
+                }
+                else(hay == false);{
+                    //cantidadProductos.push (producto);
+                }
+        }
+        return producto;
+    }
+
+    function precios(precio){
+        let total = 0;
+        for(let i=0; i < productos; i++){
+            total += precio;
+        }
+        return total;
+    }
+    function nombres (nombre){
+        for(let i=0; i<productos; i++){
+            productos.push(nombre);
+        }
+        return nombre;
+    }
+      
+    function inventarioCarrito(inventario){
+        let carrito = {
+            "inventario": inventario
+        }
+            for(let i=0; i<productos; i++){
+             inventario.push(carrito);
+        }
+        return carrito;
+    }
+    function mostrarInventario(inventario){
+        for(let i=0; i<productos; i++){
+            console.log(inventario[i]);
+        }
+    }
+    
+    switch (productos) {
+        case 1:
+            console.log("El producto es: " + nombre + " cuesta: " + precio + " y tienes: " + inventario + " de inventario");
+            break;
+        case 2:
+            console.log("El producto es: " + nombre + " cuesta: " + precio + " y tienes: " + inventario + " de inventario");
+            break;
+        case 3:
+            console.log("El producto es: " + nombre + " cuesta: " + precio + " y tienes: " + inventario + " de inventario");
+            break;
+        case 4:
+            console.log("El producto es: " + nombre + " cuesta: " + precio + " y tienes: " + inventario + " de inventario");
+            break;
+        case 5:
+            console.log("El producto es: " + nombre + " cuesta: " + precio + " y tienes: " + inventario + " de inventario");
+            break;
+        case 6:
+            console.log("El producto es: " + nombre + " cuesta: " + precio + " y tienes: " + inventario + " de inventario");
+            break;
+        case 7:
+            console.log("El producto es: " + nombre + " cuesta: " + precio + " y tienes: " + inventario + " de inventario");
+            break;
+        case 8:
+            console.log("El producto es: " + nombre + " cuesta: " + precio + " y tienes: " + inventario + " de inventario");
+            break;
+        case 9:
+            console.log("El producto es: " + nombre + " cuesta: " + precio + " y tienes: " + inventario + " de inventario");
+            break;
+        case 10:
+            console.log("El producto es: " + nombre + " cuesta: " + precio + " y tienes: " + inventario + " de inventario");
+    }
+    console.log("El total de la compra es: " + precios(precio));
+   
+    var vender = prompt("¿Desea realizar otra compra?");
+    if(vender == "si"){
+             let productos = parseInt(prompt("¿Cuantos productos desea comprar?"));
+             let nombre = prompt("Ingrese el nombre del producto");
+             let precio = parseInt(prompt("¿Cuanto cuesta el producto?"));
+             let inventario = parseInt(prompt("¿Cuantos productos hay en inventario?"));
+             cantidadProductos(productos, nombre, precio, inventario);
+             precios(precio);
+             nombres(nombre);
+             inventarioCarrito(inventario);
+             mostrarInventario(inventario);
+         }else{
+             console.log("Gracias por su compra");
+         }
+         
+
+    </script>
