@@ -9,7 +9,9 @@
     var nombre = prompt("Ingrese el nombre del producto");
     var precio = parseInt(prompt("¿Cuanto cuesta el producto?"));
     var inventario = parseInt(prompt("¿Cuantos productos hay en inventario?"));
-    
+    var todosProductos = [];
+    var nombreProductos = [];
+
     function cantidadProductos(productos, nombre, precio, inventario){
         let producto={
             "cantidad": productos,
@@ -19,12 +21,11 @@
         }
         let hay = false;
             for(let i=0; i<productos; i++){
-                if(producto[i] == productos){
+                if(todosProductos[i] == productos){
                     hay = true;
                 }
-                else(hay == false);{
-                    //cantidadProductos.push (producto);
-                }
+                    hay == false;
+                    productos.push(producto);
         }
         return producto;
     }
@@ -38,7 +39,7 @@
     }
     function nombres (nombre){
         for(let i=0; i<productos; i++){
-            productos.push(nombre);
+            nombre.push(nombreProductos);
         }
         return nombre;
     }
@@ -97,14 +98,14 @@
              let nombre = prompt("Ingrese el nombre del producto");
              let precio = parseInt(prompt("¿Cuanto cuesta el producto?"));
              let inventario = parseInt(prompt("¿Cuantos productos hay en inventario?"));
-             cantidadProductos(productos, nombre, precio, inventario);
-             precios(precio);
-             nombres(nombre);
-             inventarioCarrito(inventario);
-             mostrarInventario(inventario);
+         function reiniciar(vender) {
+             return precios(precio);
+             return nombres(nombre);
+             return inventarioCarrito(inventario);
+             return mostrarInventario(inventario);
+         }
          }else{
              console.log("Gracias por su compra");
          }
-         
 
     </script>
